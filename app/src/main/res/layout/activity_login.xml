@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#3fff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember\nWell"
+        android:textSize="26dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/txt_Nombre"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Nombre de Usuario"
+            android:autofillHints="#fffbf6"
+            android:textColorHint="#fffbf6"
+            android:paddingLeft="15dp"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"/>
+        <EditText
+            android:id="@+id/txt_Contrasenia"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:autofillHints="#fffbf6"
+            android:textColorHint="#fffbf6"
+            android:paddingLeft="15dp"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"/>
+        <!---Your comment
+        <CheckBox
+            android:id="@+id/cb_MantenerLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mantener logeado"
+            android:textColor="#fffbf6"
+            android:hint="#fffbf6"
+            android:layout_gravity="left"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="#fffbf6"/>
+        -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btncolor"
+            android:textColor="#fffbf6"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#3fff"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/btn_CrearCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear nueva cuenta"
+            android:layout_marginTop="20dp"
+            android:textColor="#fffbf6"/>
+
+    </LinearLayout>
+
+</LinearLayout>

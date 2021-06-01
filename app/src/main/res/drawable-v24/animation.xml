@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_assessment_black_24dp"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/ic_assignment_black_24dp"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/ic_assignment_turned_in_black_24dp"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/ic_attach_money_black_24dp"
+        android:duration="500"/>
+</animation-list>
