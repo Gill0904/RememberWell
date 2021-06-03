@@ -5,13 +5,14 @@ import com.azure.core.credential.AzureKeyCredential;
 import com.azure.ai.textanalytics.models.*;
 import com.azure.ai.textanalytics.TextAnalyticsClientBuilder;
 import com.azure.ai.textanalytics.TextAnalyticsClient;
+import com.example.rememberwell.BuildConfig;
 import com.example.rememberwell.ui.fragment.registroFragment;
 
 import java.security.Provider;
 
 
 public class TextAnalyticsSamples{
-    private static final String KEY = "b9fa3d12826d4c2da16f94d1b2f826e5";
+    private static final String KEY = ""+ BuildConfig.AzureAppId;
     private static final String ENDPOINT = "https://textanalyticssw.cognitiveservices.azure.com/";
 
 

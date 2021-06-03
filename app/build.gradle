@@ -2,6 +2,9 @@ plugins {
     id 'com.android.application'
 }
 
+def AZURE_API_KEY= '"'+AzureAppId+'"' ?: '"Error"'
+def STRING = 'String'
+
 android {
     compileSdkVersion 30
 
@@ -14,6 +17,12 @@ android {
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        each{
+            type -> type.buildConfigField STRING, 'AzureAppId', AZURE_API_KEY
+        }
+        manifestPlaceholders =[
+                AZURE_API_KEY : AZURE_API_KEY
+        ]
     }
 
     buildTypes {

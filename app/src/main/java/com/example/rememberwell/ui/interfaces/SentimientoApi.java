@@ -1,6 +1,7 @@
 package com.example.rememberwell.ui.interfaces;
 
 
+import com.example.rememberwell.BuildConfig;
 import com.example.rememberwell.ui.model.Document;
 import com.example.rememberwell.ui.model.Sentimiento;
 import com.fasterxml.jackson.databind.node.POJONode;
@@ -19,7 +20,7 @@ import retrofit2.http.POST;
 import static com.fasterxml.jackson.databind.type.LogicalType.POJO;
 
 public interface SentimientoApi {
-    @Headers({"Accept: application/json","Ocp-Apim-Subscription-Key: " + "b9fa3d12826d4c2da16f94d1b2f826e5",
+    @Headers({"Accept: application/json","Ocp-Apim-Subscription-Key: " + BuildConfig.AzureAppId,
             "Content-Type: application/json;charset=UTF-8"})
     @POST(".")
     Call<Document> savePost(@Body HashMap body);

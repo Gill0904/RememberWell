@@ -22,6 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         android:usesCleartextTraffic="true">
+        <meta-data
+            android:name=".com.azure.ApplicationId"
+            android:value="{$AZURE_API_KEY}"/>
         <activity
             android:name=".ui.AlarmActivity"
             android:parentActivityName=".MainActivity">
